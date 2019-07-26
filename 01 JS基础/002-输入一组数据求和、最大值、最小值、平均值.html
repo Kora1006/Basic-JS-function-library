@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // 设置断点
+    debugger;
+
+    // 对输入的一组数据求和
+
+    // 声明函数调用后可求和
+    function calculate(arr) {
+        // 弹窗获取的数值为字符串的形式，需要生成数组
+        var newArray = arr.split(','); // 此处分隔符可自行定义，将根据分隔符将输入的数据分隔成数组
+        // 声明变量存放求和结果
+        var sum = 0;
+        // 使用for语句求和,定义变量i，i为数组的索引值
+        for (var i = 0; i < newArray.length; i++) {
+            sum += Number(newArray[i]); // 当前数组为字符串需要转为数值
+        }
+        // 判断sum的值是否为数值，如不是则提醒用户
+        if (isNaN(sum)) {
+            alert('您输入的数据有误，无法计算');
+        }
+        // 如函数外需要获得返回结果，则需使用return，否则默认返回undefined
+        // 将sum的值返回，则外部可以获取
+        return sum;
+    }
+    // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
+    var arr = prompt('请输入一组数据并用“,”隔开');
+    // 声明变量调用函数，并将弹窗获取的值赋给函数
+    var result = calculate(arr);
+    // 打印结果
+    console.log(result);
+</script> -->
+
+
+ <script>
+    debugger;
+    // 对输入的一组数据求平均值
+    // 声明函数调用后可求平均值
+    function average(arr) {
+        // 弹窗获取的数值为字符串形式，需要生成数组
+        var newArray = arr.split(','); // 此处分隔符可自行定义，将根据分隔符将输入的数据分隔成数组
+        // 声明变量存放求和结果
+        var sum = 0;
+        // 声明变量存放平均值结果
+        var averageNum;
+        // 使用for语句求和，定义变量i，i为数组的索引值
+        for (var i = 0; i < newArray.length; i++) {
+            sum += Number(newArray[i]); // 当前数组为字符串需要转为数值
+        }
+        // 判断sum的值是否为数值，如不是则提醒用户
+        if (isNaN(sum)) {
+            alert('您输入的数据有误，无法计算');
+        } else {
+            // 求平均值
+            averageNum = sum / newArray.length;
+            // 显示结果
+            alert('您输入的数值的平均值为' + averageNum);
+            // 如函数外需要获得返回结果，则需使用return，否则默认返回undefined
+            // 将averageNum的值返回，则外部可以获取
+            return averageNum;
+        }
+
+    }
+    // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
+    var arr = prompt('请输入一组数据并用“,”隔开');
+    // 声明变量调用函数，并将弹窗获取的值赋给函数
+    var result = average(arr);
+</script>
+
+
+ <script>
+    debugger;
+    // 声明函数调用后可求最大值
+    function maxNum(arr) {
+        // 弹窗获取的数据为字符串，需要通过分隔符转为数组，声明变量存放该数组
+        var newArray = arr.split(',');
+        // 声明变量存放最大值，先默认最大值为数组的第一个值,数值需要转为数值形式
+        var max = + newArray[0];
+        // 使用for语句遍历数组,声明变量i，i为数组的索引值
+        for (var i = 0; i < newArray.length; i++) {
+            // 使用if语句求最大值，数组需要转为数值形式
+            if (+newArray[i] > max) {
+                max = +newArray[i];
+            }
+        }
+        // 如函数外需要获得返回结果，则需使用return，否则默认返回undefined
+        // 将max的值返回，则外部可以获取
+        return max;
+    }
+    // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
+    var arr = prompt('请输入一组数据并用“,”隔开');
+    // 声明变量调用函数，并将弹窗获取的值赋给函数
+    var result = maxNum(arr);
+    alert('您输入的数值的最大值为' + result);
+</script>
+
+
+<script>
+
+debugger;
+    // 声明函数调用后可求最小值
+    function minNum(arr) {
+        // 弹窗获取的数据为字符串，需要通过分隔符转为数组，声明变量存放该数组
+        var newArray = arr.split(',');
+        // 声明变量存放最小值，先默认最大值为数组的第一个值,数值需要转为数值形式
+        var min = + newArray[0];
+        // 使用for语句遍历数组,声明变量i，i为数组的索引值
+        for (var i = 0; i < newArray.length; i++) {
+            // 使用if语句求最大值，数组需要转为数值形式
+            if (+newArray[i] < min) {
+                min = +newArray[i];
+            }
+        }
+        // 如函数外需要获得返回结果，则需使用return，否则默认返回undefined
+        // 将min的值返回，则外部可以获取
+        return min;
+    }
+    // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
+    var arr = prompt('请输入一组数据并用“,”隔开');
+    // 声明变量调用函数，并将弹窗获取的值赋给函数
+    var result = minNum(arr);
+    alert('您输入的数值的最小值为' + result);
+</script>
