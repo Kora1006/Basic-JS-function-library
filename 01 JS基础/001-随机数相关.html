@@ -31,6 +31,28 @@
 
 
 
+    /**
+     * 
+     * @desc 获取 0 ~ n 的随机数
+     * @param  {Number} number 
+     * @return {Number} 
+     */
+    function getRandomNum(number) {
+        return Math.floor(Math.random() * (number + 1));
+    }
+
+
+
+
+    /**
+     * 
+     * @desc 返回 n ~ m 随机数
+     * @param  {number} n,m 
+     * @return {number} 
+     */
+    function getRandomNum(n, m) {
+        return Math.floor(Math.random() * (m + 1) + n);
+    }
 
 
 
