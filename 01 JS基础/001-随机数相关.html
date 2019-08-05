@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>封装随机数</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    /**
+     * 
+     * @desc 获取随机整数。
+     * @param  {number} 无具体参数
+     * @return {number} 
+     */
+
+    function getRandomNum(num) {
+        // 获取随机数并通过向下取整获取整数
+        // 可生成≥0且≤num的随机整数
+        var randomNum = Math.floor(Math.random() * (num + 1));
+        // 函数返回值
+        return randomNum;
+    }
+
+
+
+
+
+
+
+    /**
+     * 
+     * @desc 返回rgb(xx,xx,xx)颜色。
+     * @param  {number} 无具体参数
+     * @return {string} 
+     */
+    function getRandomColor() {
+        // 声明变量存储颜色值
+        var nums1 = Math.floor(Math.random() * 255);
+        var nums2 = Math.floor(Math.random() * 255);
+        var nums3 = Math.floor(Math.random() * 255);
+        var color = 'rgb(' + nums1 + ',' + nums2 + ',' + nums3 + ')';
+        // 函数返回值
+        return color;
+    }
+</script>

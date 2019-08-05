@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * 
+         * @desc 返回rgb(xx,xx,xx)颜色。
+         * @param  {number} 无具体参数
+         * @return {string} 
+         */
+        function getRandomColor() {
+            // 声明变量存储颜色值
+            var nums1 = Math.floor(Math.random() * 255);
+            var nums2 = Math.floor(Math.random() * 255);
+            var nums3 = Math.floor(Math.random() * 255);
+            var color = 'rgb(' + nums1 + ',' + nums2 + ',' + nums3 + ')';
+            // 函数返回值
+            return color;
+        }
+    </script>
+</body>
+
+</html>
