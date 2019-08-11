@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>封装随机数</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
-<script>
     /**
      * 
-     * @desc 获取随机整数。
-     * @param  {number} 无具体参数
+     * @desc 随机0~n整数。
+     * @name getRandomNum
+     * @param  {number} num
      * @return {number} 
      */
 
@@ -31,23 +17,14 @@
 
 
 
-    /**
-     * 
-     * @desc 获取 0 ~ n 的随机数
-     * @param  {Number} number 
-     * @return {Number} 
-     */
-    function getRandomNum(number) {
-        return Math.floor(Math.random() * (number + 1));
-    }
-
 
 
 
     /**
      * 
      * @desc 返回 n ~ m 随机数
-     * @param  {number} n,m 
+     * @name getRandomNum
+     * @param  {number}  n,m 
      * @return {number} 
      */
     function getRandomNum(n, m) {
@@ -60,7 +37,7 @@
     /**
      * 
      * @desc 返回rgb(xx,xx,xx)颜色。
-     * @param  {number} 无具体参数
+     * @name getRandomColor
      * @return {string} 
      */
     function getRandomColor() {
@@ -72,4 +49,3 @@
         // 函数返回值
         return color;
     }
-</script>

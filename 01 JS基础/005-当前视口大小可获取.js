@@ -12,4 +12,4 @@
       } else if (wid > 1200) {
         tit.text("大屏幕-" + wid) ;
       }
-  })
+  }).trigger(resize)

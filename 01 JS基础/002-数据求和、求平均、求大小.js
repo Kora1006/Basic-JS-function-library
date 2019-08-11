@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
-<script>
     /**
      * 
      * @desc 对弹窗获取的一组数据求和。
+     * @name calculate
      * @param  {object} arr（数组）
      * @return {number} 
      */
@@ -44,6 +30,7 @@
     /**
      * 
      * @desc 对弹窗获取的一组数据求平均值。
+     * @name averages
      * @param  {object} arr（数组）
      * @return {number} 
      */
@@ -81,6 +68,7 @@
     /**
      * 
      * @desc 对弹窗获取的一组数据求最大值。
+     * @name maxNum
      * @param  {object} arr（数组）
      * @return {number} 
      */
@@ -104,9 +92,16 @@
     // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
     var arr = prompt('请输入一组数据并用“,”隔开');
   
+
+
+
+
+
+
     /**
      * 
      * @desc 对弹窗获取的一组数据求最小值。
+     * @name minNum
      * @param  {object} arr（数组）
      * @return {number} 
      */
@@ -130,4 +125,3 @@
     // 通过弹窗获取数值，并规定分隔符，需要与函数中要求的分隔符一致
     var arr = prompt('请输入一组数据并用“,”隔开');
   
-</script>

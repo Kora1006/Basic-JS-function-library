@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>冒泡处理</title>
-</head>
-
-<body>
-    <script>
         /**
          * 
          * @desc 返回从小到大排序的数组
+         * @name newArray
          * @param  {object} arr
          * @return {object} 
          */
@@ -33,7 +23,3 @@
             // 将结果返回函数外部
             return arr;
         }
-    </script>
-</body>
-
-</html>
